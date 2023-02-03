@@ -6,12 +6,46 @@
 //
 
 import UIKit
+import PinLayout
+import FlexLayout
 
 class ViewController: UIViewController {
-
+    
+//    let mainView = SampleView()
+    let roofFlexContainer: UIView = UIView()
+    let label1: UILabel = UILabel()
+    let label2: UILabel = UILabel()
+    let label3: UILabel = UILabel()
+    
+    init() {
+        self.view.addSubview(roofFlexContainer)
+        self.roofFlexContainer.flex.define { flex in
+            flex.addItem(label1)
+            flex.addItem(label2)
+            flex.addItem(label3)
+        }
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+//        self.view = mainView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        mainView.label1.text = "text1"
+//        mainView.label2.text = "text2"
+//        mainView.backgroundColor = .yellow
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        
     }
 
 
