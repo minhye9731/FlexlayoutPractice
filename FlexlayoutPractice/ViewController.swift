@@ -17,19 +17,6 @@ class ViewController: UIViewController {
     let label2: UILabel = UILabel()
     let label3: UILabel = UILabel()
     
-    init() {
-        self.view.addSubview(roofFlexContainer)
-        self.roofFlexContainer.flex.define { flex in
-            flex.addItem(label1)
-            flex.addItem(label2)
-            flex.addItem(label3)
-        }
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func loadView() {
 //        self.view = mainView
     }
@@ -40,10 +27,19 @@ class ViewController: UIViewController {
 //        mainView.label2.text = "text2"
 //        mainView.backgroundColor = .yellow
         
+        self.view.addSubview(roofFlexContainer)
+        self.roofFlexContainer.flex.define { flex in
+            flex.addItem(label1)
+            flex.addItem(label2)
+            flex.addItem(label3)
+        }
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
+        roofFlexContainer.pin.all()
+        roofFlexContainer.flex.layout()
         
         
     }
