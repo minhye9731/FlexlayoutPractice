@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EB88D1129914CAD00D7D96F /* CountingVirewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D1029914CAD00D7D96F /* CountingVirewController.swift */; };
 		0EEAE5C2298AB2E5005C8DE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C1298AB2E5005C8DE3 /* AppDelegate.swift */; };
 		0EEAE5C4298AB2E5005C8DE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C3298AB2E5005C8DE3 /* SceneDelegate.swift */; };
 		0EEAE5C6298AB2E5005C8DE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C5298AB2E5005C8DE3 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EB88D1029914CAD00D7D96F /* CountingVirewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingVirewController.swift; sourceTree = "<group>"; };
 		0EEAE5BE298AB2E5005C8DE3 /* FlexlayoutPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexlayoutPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEAE5C1298AB2E5005C8DE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EEAE5C3298AB2E5005C8DE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				0EEAE5CC298AB2E6005C8DE3 /* LaunchScreen.storyboard */,
 				0EEAE5CF298AB2E6005C8DE3 /* Info.plist */,
 				0EEAE5D5298AB455005C8DE3 /* sampleView.swift */,
+				0EB88D1029914CAD00D7D96F /* CountingVirewController.swift */,
 			);
 			path = FlexlayoutPractice;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB88D1129914CAD00D7D96F /* CountingVirewController.swift in Sources */,
 				0EEAE5D6298AB455005C8DE3 /* sampleView.swift in Sources */,
 				0EEAE5C6298AB2E5005C8DE3 /* ViewController.swift in Sources */,
 				0EEAE5C2298AB2E5005C8DE3 /* AppDelegate.swift in Sources */,
