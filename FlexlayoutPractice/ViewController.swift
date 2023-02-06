@@ -11,39 +11,42 @@ import FlexLayout
 
 class ViewController: UIViewController {
     
-//    let mainView = SampleView()
-    let roofFlexContainer: UIView = UIView()
-    let label1: UILabel = UILabel()
-    let label2: UILabel = UILabel()
-    let label3: UILabel = UILabel()
+    let mainView = SampleView()
     
     override func loadView() {
-//        self.view = mainView
+        self.view = mainView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        mainView.label1.text = "text1"
-//        mainView.label2.text = "text2"
-//        mainView.backgroundColor = .yellow
         
-        self.view.addSubview(roofFlexContainer)
-        self.roofFlexContainer.flex.define { flex in
-            flex.addItem(label1)
-            flex.addItem(label2)
-            flex.addItem(label3)
-        }
+        self.isHeroEnabled = true
+
+        mainView.label1.text = "text1"
+        mainView.label2.text = "text2"
+        mainView.backbutton.setTitle("뒤로가기", for: .normal)
+        mainView.backgroundColor = .yellow
+        
+        mainView.backbutton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        
+        self.isHeroEnabled = true
+//        self.hero.modalAnimationType = .selectBy(presenting: .pull(direction: .left), dismissing: .slide(direction: .down))
+        self.hero.modalAnimationType = .selectBy(presenting: .fade, dismissing: .fade)
+//        self.mainView.label2.hero.id = "wow"
+
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        roofFlexContainer.pin.all()
-        roofFlexContainer.flex.layout()
-        
-        
+    @objc func didTapButton() {
+        self.dismiss(animated: true)
     }
 
 
+    override func viewWillAppear(_ animated: Bool) {
+//        enableHero()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+//        disableHero()
+    }
 }
 

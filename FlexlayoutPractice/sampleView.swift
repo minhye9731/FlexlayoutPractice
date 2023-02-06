@@ -17,6 +17,7 @@ final class SampleView: UIView {
     
     let label1 = UILabel()
     let label2 = UILabel()
+    let backbutton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,7 +30,8 @@ final class SampleView: UIView {
             .alignItems(.center)
             .define { flex in
                 flex.addItem(self.label1).marginEnd(6.0)
-                flex.addItem(self.label2)
+                flex.addItem(self.label2).marginEnd(18.0)
+                flex.addItem(self.backbutton)
             }
     }
     

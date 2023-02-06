@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 final class CountingViewController: UIViewController {
     
@@ -28,18 +29,41 @@ final class CountingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        mainView.subtractButton.isHeroEnabled = true
+//        mainView.count.isHeroEnabled = true
+//        
+//        mainView.subtractButton.hero.id = "wow"
+//        mainView.count.hero.id  = "wow"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        enableHero()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        disableHero()
     }
     
     // MARK: - 액션
     @objc func plusCount(_: UIButton!) {
-        count += 1
-        mainView.count.text = "\(count)"
+//        count += 1
+//        mainView.count.text = "\(count)"
+        
+        let vc = ViewController()
+//        vc.hero.modalAnimationType = .fade
+//        vc.navigationController?.pushViewController(vc, animated: true)
+        
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
     }
     
     @objc func subtractCount(_: UIButton!) {
         count -= 1
         mainView.count.text = "\(count)"
     }
+    
+    
+    
     
     
 }
