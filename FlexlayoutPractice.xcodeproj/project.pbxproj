@@ -16,6 +16,8 @@
 		0EB88D322993EF3800D7D96F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D312993EF3800D7D96F /* UIColor+Extension.swift */; };
 		0EB88D342993EFAC00D7D96F /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D332993EFAC00D7D96F /* UIImageView+Extension.swift */; };
 		0EB88D362993F09B00D7D96F /* PageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D352993F09B00D7D96F /* PageType.swift */; };
+		0EB88D392993F15100D7D96F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D382993F15100D7D96F /* MenuViewController.swift */; };
+		0EB88D3B2993F1A700D7D96F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D3A2993F1A700D7D96F /* MenuView.swift */; };
 		0EEAE5C2298AB2E5005C8DE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C1298AB2E5005C8DE3 /* AppDelegate.swift */; };
 		0EEAE5C4298AB2E5005C8DE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C3298AB2E5005C8DE3 /* SceneDelegate.swift */; };
 		0EEAE5C6298AB2E5005C8DE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C5298AB2E5005C8DE3 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 		0EB88D312993EF3800D7D96F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0EB88D332993EFAC00D7D96F /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		0EB88D352993F09B00D7D96F /* PageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageType.swift; sourceTree = "<group>"; };
+		0EB88D382993F15100D7D96F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0EB88D3A2993F1A700D7D96F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		0EEAE5BE298AB2E5005C8DE3 /* FlexlayoutPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexlayoutPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEAE5C1298AB2E5005C8DE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EEAE5C3298AB2E5005C8DE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		0EB88D292993ED7200D7D96F /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				0EB88D382993F15100D7D96F /* MenuViewController.swift */,
+				0EB88D3A2993F1A700D7D96F /* MenuView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -254,6 +260,8 @@
 				0EB88D2E2993EE0800D7D96F /* BasicView.swift in Sources */,
 				0EEAE5C6298AB2E5005C8DE3 /* ViewController.swift in Sources */,
 				0EB88D1429914D1700D7D96F /* CountingView.swift in Sources */,
+				0EB88D3B2993F1A700D7D96F /* MenuView.swift in Sources */,
+				0EB88D392993F15100D7D96F /* MenuViewController.swift in Sources */,
 				0EB88D2C2993ED9F00D7D96F /* BaseViewController.swift in Sources */,
 				0EB88D342993EFAC00D7D96F /* UIImageView+Extension.swift in Sources */,
 				0EEAE5C2298AB2E5005C8DE3 /* AppDelegate.swift in Sources */,

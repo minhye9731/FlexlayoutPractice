@@ -19,6 +19,7 @@ enum PageType: Int {
     case yogaExampleD
     case yogaExampleE
     case yogaExampleF
+    case count
     
     var text: String {
         switch self {
@@ -33,6 +34,7 @@ enum PageType: Int {
         case .yogaExampleD:   return "Yoga C# Example"
         case .yogaExampleE:   return "Yoga Android Example"
         case .yogaExampleF:   return "Yoga Baseline Example"
+        case .count:          return ""
         }
     }
 
@@ -49,6 +51,7 @@ enum PageType: Int {
         case .yogaExampleD:   return YogaExampleDViewController(pageType: self)
         case .yogaExampleE:   return YogaExampleEViewController(pageType: self)
         case .yogaExampleF:   return YogaExampleFViewController(pageType: self)
+        case .count:          return UIViewController()
         }
     }
 }
