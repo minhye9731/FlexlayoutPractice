@@ -11,6 +11,7 @@
 		0EB88D1429914D1700D7D96F /* CountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D1329914D1700D7D96F /* CountingView.swift */; };
 		0EB88D17299158F300D7D96F /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB88D16299158F300D7D96F /* Hero */; };
 		0EB88D1929915F8200D7D96F /* HeroHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D1829915F8200D7D96F /* HeroHelper.swift */; };
+		0EB88D2C2993ED9F00D7D96F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D2B2993ED9F00D7D96F /* BaseViewController.swift */; };
 		0EEAE5C2298AB2E5005C8DE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C1298AB2E5005C8DE3 /* AppDelegate.swift */; };
 		0EEAE5C4298AB2E5005C8DE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C3298AB2E5005C8DE3 /* SceneDelegate.swift */; };
 		0EEAE5C6298AB2E5005C8DE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE5C5298AB2E5005C8DE3 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		0EB88D1029914CAD00D7D96F /* CountingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		0EB88D1329914D1700D7D96F /* CountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingView.swift; sourceTree = "<group>"; };
 		0EB88D1829915F8200D7D96F /* HeroHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHelper.swift; sourceTree = "<group>"; };
+		0EB88D2B2993ED9F00D7D96F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0EEAE5BE298AB2E5005C8DE3 /* FlexlayoutPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexlayoutPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEAE5C1298AB2E5005C8DE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EEAE5C3298AB2E5005C8DE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,38 @@
 			path = CountingScene;
 			sourceTree = "<group>";
 		};
+		0EB88D272993ED5F00D7D96F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0EB88D282993ED6500D7D96F /* Common */,
+				0EB88D292993ED7200D7D96F /* Menu */,
+				0EB88D2A2993ED7700D7D96F /* Examples */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0EB88D282993ED6500D7D96F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0EB88D2B2993ED9F00D7D96F /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0EB88D292993ED7200D7D96F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		0EB88D2A2993ED7700D7D96F /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
 		0EEAE5B5298AB2E5005C8DE3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +115,7 @@
 		0EEAE5C0298AB2E5005C8DE3 /* FlexlayoutPractice */ = {
 			isa = PBXGroup;
 			children = (
+				0EB88D272993ED5F00D7D96F /* UI */,
 				0EB88D1229914CDF00D7D96F /* CountingScene */,
 				0EEAE5C1298AB2E5005C8DE3 /* AppDelegate.swift */,
 				0EEAE5C3298AB2E5005C8DE3 /* SceneDelegate.swift */,
@@ -181,6 +216,7 @@
 				0EEAE5D6298AB455005C8DE3 /* sampleView.swift in Sources */,
 				0EEAE5C6298AB2E5005C8DE3 /* ViewController.swift in Sources */,
 				0EB88D1429914D1700D7D96F /* CountingView.swift in Sources */,
+				0EB88D2C2993ED9F00D7D96F /* BaseViewController.swift in Sources */,
 				0EEAE5C2298AB2E5005C8DE3 /* AppDelegate.swift in Sources */,
 				0EEAE5C4298AB2E5005C8DE3 /* SceneDelegate.swift in Sources */,
 			);
