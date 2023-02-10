@@ -50,5 +50,14 @@ class IntroView: UIView {
         super.init(coder: eDecoder)
     }
     
-    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // 1) PinLayout 사용해서 rootFlexContainer의 layout을 먼저 잡아줌
+        // (rootFlexContainer의 frame으로 바로 layout을 직접적으로 설정할 수도 있음)
+        rootFlexContainer.pin.top().horizontally().margin(pin.safeArea)
+        
+        // 2) 그리고나서 flexbox 컨테이너 자체의 layout을 잡아준다.
+        rootFlexContainer.flex.layout(mode: .adjustHeight)
+    }
 }
