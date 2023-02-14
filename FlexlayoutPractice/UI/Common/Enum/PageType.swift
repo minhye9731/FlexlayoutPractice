@@ -14,11 +14,11 @@ enum PageType: Int {
     case collectionView
     case exampleColumn
     case ExampleA
-//    case yogaExampleB
-//    case yogaExampleC
-//    case yogaExampleD
-//    case yogaExampleE
-//    case yogaExampleF
+    case ExampleB
+    case ExampleC
+    case ExampleD
+    case ExampleE
+    case ExampleF
     case count
     
     var text: String {
@@ -29,11 +29,11 @@ enum PageType: Int {
         case .collectionView: return "UICollectionView with variable cell's height"
         case .exampleColumn:  return "Example Column"
         case .ExampleA:   return "ExampleA"
-//        case .yogaExampleB:   return "Yoga Obj-C Example"
-//        case .yogaExampleC:   return "Yoga Java Example"
-//        case .yogaExampleD:   return "Yoga C# Example"
-//        case .yogaExampleE:   return "Yoga Android Example"
-//        case .yogaExampleF:   return "Yoga Baseline Example"
+        case .ExampleB:   return "ExampleB"
+        case .ExampleC:   return "ExampleC"
+        case .ExampleD:   return "ExampleD"
+        case .ExampleE:   return "ExampleE"
+        case .ExampleF:   return "ExampleF"
         case .count:          return ""
         }
     }
@@ -46,11 +46,11 @@ enum PageType: Int {
         case .collectionView: return CollectionViewExampleViewController(pageType: self)
         case .exampleColumn:  return ExampleViewController(pageType: self)
         case .ExampleA:   return ExampleAViewController(pageType: self)
-//        case .yogaExampleB:   return YogaExampleBViewController(pageType: self)
-//        case .yogaExampleC:   return YogaExampleCViewController(pageType: self)
-//        case .yogaExampleD:   return YogaExampleDViewController(pageType: self)
-//        case .yogaExampleE:   return YogaExampleEViewController(pageType: self)
-//        case .yogaExampleF:   return YogaExampleFViewController(pageType: self)
+        case .ExampleB:   return ExampleBViewController(pageType: self)
+        case .ExampleC:   return ExampleCViewController(pageType: self)
+        case .ExampleD:   return ExampleDViewController(pageType: self)
+        case .ExampleE:   return ExampleEViewController(pageType: self)
+        case .ExampleF:   return ExampleFViewController(pageType: self)
         case .count:          return UIViewController()
         }
     }
