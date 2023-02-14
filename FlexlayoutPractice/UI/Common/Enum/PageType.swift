@@ -13,7 +13,7 @@ enum PageType: Int {
     case tableview
     case collectionView
     case exampleColumn
-//    case yogaExampleA
+    case ExampleA
 //    case yogaExampleB
 //    case yogaExampleC
 //    case yogaExampleD
@@ -28,7 +28,7 @@ enum PageType: Int {
         case .tableview:      return "UITableView with variable cell's height"
         case .collectionView: return "UICollectionView with variable cell's height"
         case .exampleColumn:  return "Example Column"
-//        case .yogaExampleA:   return "Yoga C Example"
+        case .ExampleA:   return "ExampleA"
 //        case .yogaExampleB:   return "Yoga Obj-C Example"
 //        case .yogaExampleC:   return "Yoga Java Example"
 //        case .yogaExampleD:   return "Yoga C# Example"
@@ -45,7 +45,7 @@ enum PageType: Int {
         case .tableview:      return TableViewExampleViewController(pageType: self)
         case .collectionView: return CollectionViewExampleViewController(pageType: self)
         case .exampleColumn:  return ExampleViewController(pageType: self)
-//        case .yogaExampleA:   return YogaExampleAViewController(pageType: self)
+        case .ExampleA:   return ExampleAViewController(pageType: self)
 //        case .yogaExampleB:   return YogaExampleBViewController(pageType: self)
 //        case .yogaExampleC:   return YogaExampleCViewController(pageType: self)
 //        case .yogaExampleD:   return YogaExampleDViewController(pageType: self)
