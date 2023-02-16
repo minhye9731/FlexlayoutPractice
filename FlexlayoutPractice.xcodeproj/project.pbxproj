@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E879DBA299E773B00BBE9D2 /* HouseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */; };
 		0EB88D1129914CAD00D7D96F /* CountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D1029914CAD00D7D96F /* CountingViewController.swift */; };
 		0EB88D1429914D1700D7D96F /* CountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88D1329914D1700D7D96F /* CountingView.swift */; };
 		0EB88D17299158F300D7D96F /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB88D16299158F300D7D96F /* Hero */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseHeader.swift; sourceTree = "<group>"; };
 		0EB88D1029914CAD00D7D96F /* CountingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		0EB88D1329914D1700D7D96F /* CountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingView.swift; sourceTree = "<group>"; };
 		0EB88D1829915F8200D7D96F /* HeroHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHelper.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				0EB88D4F2999272200D7D96F /* HouseCell.swift */,
 				0EB88D5129992CB900D7D96F /* CollectionViewExampleView.swift */,
 				0EB88D5329992FDD00D7D96F /* CollectionViewExampleViewController.swift */,
+				0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */,
 			);
 			path = CollectionViewExample;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				0EB88D73299BDA8200D7D96F /* ExampleEView.swift in Sources */,
 				0EB88D3B2993F1A700D7D96F /* MenuView.swift in Sources */,
 				0EB88D6B299BD49100D7D96F /* ExampleDViewController.swift in Sources */,
+				0E879DBA299E773B00BBE9D2 /* HouseHeader.swift in Sources */,
 				0EB88D392993F15100D7D96F /* MenuViewController.swift in Sources */,
 				0EB88D2C2993ED9F00D7D96F /* BaseViewController.swift in Sources */,
 				0EB88D68299BD13D00D7D96F /* ExampleCView.swift in Sources */,
