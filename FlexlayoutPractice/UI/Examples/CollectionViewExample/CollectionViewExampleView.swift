@@ -22,11 +22,13 @@ class CollectionViewExampleView: UIView {
         
         flowLayout.minimumLineSpacing = 8
         flowLayout.minimumInteritemSpacing = 0
+        flowLayout.headerReferenceSize = .init(width: UIScreen.main.bounds.width, height: 100)
         
         collectionView.backgroundColor = .white
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(HouseCell.self, forCellWithReuseIdentifier: HouseCell.reuseIdentifier)
+        collectionView.register(HouseHeader.self, forSupplementaryViewOfKind: collectionView.supple, withReuseIdentifier: HouseHeader.id)
         addSubview(collectionView)
     }
     
