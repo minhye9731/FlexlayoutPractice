@@ -9,9 +9,11 @@ import UIKit
 
 class CollectionViewExampleViewController: BaseViewController {
     
-    fileprivate var mainView: CollectionViewExampleView {
-        return self.view as! CollectionViewExampleView
-    }
+//    fileprivate var mainView: CollectionViewExampleView {
+//        return self.view as! CollectionViewExampleView
+//    }
+    
+    let mainView = CollectionViewExampleView()
     
     init(pageType: PageType) {
         super.init()
@@ -24,7 +26,7 @@ class CollectionViewExampleViewController: BaseViewController {
     }
     
     override func loadView() {
-        view = CollectionViewExampleView()
+        view = mainView
         
         mainView.configure(houses: [
         

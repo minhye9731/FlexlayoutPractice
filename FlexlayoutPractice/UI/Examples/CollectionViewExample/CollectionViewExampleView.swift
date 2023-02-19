@@ -28,7 +28,10 @@ class CollectionViewExampleView: UIView {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(HouseCell.self, forCellWithReuseIdentifier: HouseCell.reuseIdentifier)
-        collectionView.register(HouseHeader.self, forSupplementaryViewOfKind: collectionView.supple, withReuseIdentifier: HouseHeader.id)
+        collectionView.register(
+            HouseHeader.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: HouseHeader.id)
         addSubview(collectionView)
     }
     
@@ -52,7 +55,7 @@ class CollectionViewExampleView: UIView {
     
 }
 
-extension CollectionViewExampleView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+extension CollectionViewExampleView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return houses.count
@@ -67,6 +70,22 @@ extension CollectionViewExampleView: UICollectionViewDelegateFlowLayout, UIColle
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         cellTemplate.configure(house: houses[indexPath.row])
         return cellTemplate.sizeThatFits(CGSize(width: collectionView.bounds.width, height: .greatestFiniteMagnitude))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let supView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: HouseHeader.id,
+                for: indexPath
+            ) as! HouseHeader
+            supView.prepare(title: "💜HouseHeader💜")
+            return supView
+        default:
+            return UICollectionReusableView()
+        }
     }
     
 }

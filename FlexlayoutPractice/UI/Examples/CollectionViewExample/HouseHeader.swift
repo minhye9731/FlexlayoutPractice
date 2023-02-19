@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import PinLayout
+import FlexLayout
 
 class HouseHeader: UICollectionReusableView {
     
@@ -13,7 +15,6 @@ class HouseHeader: UICollectionReusableView {
     
     let headerLabel: UILabel = {
         let label = UILabel()
-        label.text = "HouseHeader"
         label.textColor = .systemBlue
         label.font = .boldSystemFont(ofSize: 20)
         return label
@@ -21,7 +22,8 @@ class HouseHeader: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .yellow
+        backgroundColor = .white
+        self.headerLabel.sizeToFit() // 포인트
         addSubview(headerLabel)
     }
     
@@ -31,14 +33,19 @@ class HouseHeader: UICollectionReusableView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        print(#function)
         headerLabel.pin.horizontally(pin.safeArea.left + 20).vCenter()
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        headerLabel.text = ""
+        self.prepare(title: nil)
     }
     
-    
+    func prepare(title: String?) {
+        print("\(title)")
+        self.headerLabel.text = title
+        self.headerLabel.sizeToFit() // 포인트
+    }
     
 }
