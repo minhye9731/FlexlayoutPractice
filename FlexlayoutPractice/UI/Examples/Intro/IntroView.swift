@@ -29,13 +29,14 @@ class IntroView: UIView {
         bottomLabel.text = "FlexLayout/yoga가 빠르다고 하네"
         bottomLabel.numberOfLines = 0
         
-        rootFlexContainer.flex.direction(.column).padding(12).define { flex in
+        rootFlexContainer.flex.direction(.column).padding(20).define { flex in
             
             flex.addItem().direction(.row).define { flex in
                 flex.addItem(imageView).width(100).aspectRatio(of: imageView)
-                flex.addItem().direction(.column).paddingLeft(12).grow(1).shrink(1).define { flex in
-                    flex.addItem(segmentedControl).marginBottom(12).grow(1)
-                    flex.addItem(label)
+                flex.addItem().direction(.column).paddingLeft(12).grow(1).backgroundColor(.yellow).define { flex in
+//                    flex.addItem(segmentedControl).marginBottom(12).shrink(1)
+                    flex.addItem(label).marginBottom(10)
+                    flex.addItem(bottomLabel)
                 }
             }
             
