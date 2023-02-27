@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E05428429ACF9B600599E00 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0E05428329ACF9B600599E00 /* Then */; };
 		0E879DBA299E773B00BBE9D2 /* HouseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */; };
 		0E879DC329A7B3A100BBE9D2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0E879DC229A7B3A100BBE9D2 /* Lottie */; };
 		0E879DC629A906F900BBE9D2 /* Graphing in Frameworks */ = {isa = PBXBuildFile; productRef = 0E879DC529A906F900BBE9D2 /* Graphing */; };
@@ -113,6 +114,7 @@
 			files = (
 				0E879DCB29AA497400BBE9D2 /* IBAnimatable in Frameworks */,
 				0EEAE5D9298AB4C6005C8DE3 /* PinLayout in Frameworks */,
+				0E05428429ACF9B600599E00 /* Then in Frameworks */,
 				0EEAE5DD298AB512005C8DE3 /* FlexLayout in Frameworks */,
 				0EEAE5E1298AB512005C8DE3 /* FlexLayoutYogaKit in Frameworks */,
 				0EB88D17299158F300D7D96F /* Hero in Frameworks */,
@@ -379,6 +381,7 @@
 				0E879DC729A906F900BBE9D2 /* Motion */,
 				0E879DCA29AA497400BBE9D2 /* IBAnimatable */,
 				0E879DCD29ABAA4400BBE9D2 /* Advance */,
+				0E05428329ACF9B600599E00 /* Then */,
 			);
 			productName = FlexlayoutPractice;
 			productReference = 0EEAE5BE298AB2E5005C8DE3 /* FlexlayoutPractice.app */;
@@ -416,6 +419,7 @@
 				0E879DC429A906F900BBE9D2 /* XCRemoteSwiftPackageReference "Motion" */,
 				0E879DC929AA497400BBE9D2 /* XCRemoteSwiftPackageReference "IBAnimatable" */,
 				0E879DCC29ABAA4400BBE9D2 /* XCRemoteSwiftPackageReference "Advance" */,
+				0E05428229ACF9B600599E00 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 0EEAE5BF298AB2E5005C8DE3 /* Products */;
 			projectDirPath = "";
@@ -694,6 +698,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0E05428229ACF9B600599E00 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		0E879DC129A7B3A100BBE9D2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -753,6 +765,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0E05428329ACF9B600599E00 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E05428229ACF9B600599E00 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		0E879DC229A7B3A100BBE9D2 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0E879DC129A7B3A100BBE9D2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
