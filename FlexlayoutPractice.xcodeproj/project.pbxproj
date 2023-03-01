@@ -11,6 +11,7 @@
 		0E05428729AE448D00599E00 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0E05428629AE448D00599E00 /* RxCocoa */; };
 		0E05428929AE448D00599E00 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0E05428829AE448D00599E00 /* RxRelay */; };
 		0E05428B29AE448D00599E00 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E05428A29AE448D00599E00 /* RxSwift */; };
+		0E05428D29AF4EC800599E00 /* ConfigurableContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E05428C29AF4EC800599E00 /* ConfigurableContainerView.swift */; };
 		0E879DBA299E773B00BBE9D2 /* HouseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */; };
 		0E879DC329A7B3A100BBE9D2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0E879DC229A7B3A100BBE9D2 /* Lottie */; };
 		0E879DC629A906F900BBE9D2 /* Graphing in Frameworks */ = {isa = PBXBuildFile; productRef = 0E879DC529A906F900BBE9D2 /* Graphing */; };
@@ -65,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E05428C29AF4EC800599E00 /* ConfigurableContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableContainerView.swift; sourceTree = "<group>"; };
 		0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseHeader.swift; sourceTree = "<group>"; };
 		0EB88D1029914CAD00D7D96F /* CountingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		0EB88D1329914D1700D7D96F /* CountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingView.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		0EB88D442997FA4700D7D96F /* TableViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				0E05428C29AF4EC800599E00 /* ConfigurableContainerView.swift */,
 				0EB88D452997FA5E00D7D96F /* Subviews */,
 				0EB88D4A2997FDAF00D7D96F /* TableViewExampleView.swift */,
 				0EB88D4C2997FFD300D7D96F /* TableViewExampleViewController.swift */,
@@ -490,6 +493,7 @@
 				0EEAE5C2298AB2E5005C8DE3 /* AppDelegate.swift in Sources */,
 				0EB88D5729993EEA00D7D96F /* ExampleView.swift in Sources */,
 				0EB88D502999272200D7D96F /* HouseCell.swift in Sources */,
+				0E05428D29AF4EC800599E00 /* ConfigurableContainerView.swift in Sources */,
 				0EB88D4D2997FFD300D7D96F /* TableViewExampleViewController.swift in Sources */,
 				0EB88D71299BDA6B00D7D96F /* ExampleEViewController.swift in Sources */,
 				0EEAE5C4298AB2E5005C8DE3 /* SceneDelegate.swift in Sources */,
