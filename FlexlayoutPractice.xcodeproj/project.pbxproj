@@ -441,6 +441,7 @@
 				0E05428529AE448C00599E00 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				0E05428E29B0DF3A00599E00 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0E05429129B227FA00599E00 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				0E05429429B3945B00599E00 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 0EEAE5BF298AB2E5005C8DE3 /* Products */;
 			projectDirPath = "";
@@ -750,6 +751,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
+			};
+		};
+		0E05429429B3945B00599E00 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
 			};
 		};
 		0E879DC129A7B3A100BBE9D2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
