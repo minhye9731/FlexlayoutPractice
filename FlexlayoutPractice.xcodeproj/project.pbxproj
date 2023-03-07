@@ -444,6 +444,7 @@
 				0E05429429B3945B00599E00 /* XCRemoteSwiftPackageReference "Moya" */,
 				0E05429529B4E52100599E00 /* XCRemoteSwiftPackageReference "Charts" */,
 				0E05429629B632C500599E00 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */,
+				0E05429729B7880100599E00 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 0EEAE5BF298AB2E5005C8DE3 /* Products */;
 			projectDirPath = "";
@@ -777,6 +778,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.8.0;
+			};
+		};
+		0E05429729B7880100599E00 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
 			};
 		};
 		0E879DC129A7B3A100BBE9D2 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
