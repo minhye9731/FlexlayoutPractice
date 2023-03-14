@@ -22,7 +22,7 @@ class CollectionViewExampleView: UIView {
         
         flowLayout.minimumLineSpacing = 8
         flowLayout.minimumInteritemSpacing = 0
-        flowLayout.headerReferenceSize = .init(width: UIScreen.main.bounds.width, height: 100)
+        flowLayout.headerReferenceSize = .init(width: UIScreen.main.bounds.width, height: 90)
         
         collectionView.backgroundColor = .white
         collectionView.dataSource = self
