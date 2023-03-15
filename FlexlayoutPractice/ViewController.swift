@@ -30,9 +30,7 @@ class ViewController: UIViewController {
         mainView.backbutton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
         self.isHeroEnabled = true
-//        self.hero.modalAnimationType = .selectBy(presenting: .pull(direction: .left), dismissing: .slide(direction: .down))
         self.hero.modalAnimationType = .selectBy(presenting: .fade, dismissing: .fade)
-//        self.mainView.label2.hero.id = "wow"
 
     }
     
