@@ -29,10 +29,11 @@ final class SampleView: UIView {
             .justifyContent(.start)
             .alignItems(.center)
             .define { flex in
-                flex.addItem(self.label1).marginEnd(6.0)
-                flex.addItem(self.label2).marginEnd(18.0)
+                flex.addItem(self.label1).marginEnd(6)
+                flex.addItem(self.label2).marginEnd(18)
                 flex.addItem(self.backbutton)
             }
+        update()
     }
     
     required init?(coder: NSCoder) {
@@ -44,6 +45,10 @@ final class SampleView: UIView {
         
         self.flexContainer.pin.all(self.pin.safeArea)
         self.flexContainer.flex.layout()
+    }
+    
+    func update() {
+        self.layoutIfNeeded()
     }
     
 }
