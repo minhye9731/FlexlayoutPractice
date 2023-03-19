@@ -43,7 +43,12 @@ class CollectionViewExampleView: UIView {
     
     func configure(houses: [House]) {
         self.houses = houses
-        collectionView.reloadData()
+        self.updateItems()
+    }
+    
+    func updateItems() {
+        self.collectionView.reloadData()
+        self.collectionView.layoutIfNeeded()
     }
     
     func viewOrientationDidChange() {
