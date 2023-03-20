@@ -14,6 +14,7 @@
 		0E05428D29AF4EC800599E00 /* ConfigurableContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E05428C29AF4EC800599E00 /* ConfigurableContainerView.swift */; };
 		0E05429029B0DF3A00599E00 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E05428F29B0DF3A00599E00 /* Alamofire */; };
 		0E05429329B227FA00599E00 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 0E05429229B227FA00599E00 /* RxDataSources */; };
+		0E1AFE1D29C8AA0A00E18459 /* SectionDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AFE1C29C8AA0A00E18459 /* SectionDecorationView.swift */; };
 		0E879DBA299E773B00BBE9D2 /* HouseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */; };
 		0E879DC329A7B3A100BBE9D2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0E879DC229A7B3A100BBE9D2 /* Lottie */; };
 		0E879DC629A906F900BBE9D2 /* Graphing in Frameworks */ = {isa = PBXBuildFile; productRef = 0E879DC529A906F900BBE9D2 /* Graphing */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		0E05428C29AF4EC800599E00 /* ConfigurableContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableContainerView.swift; sourceTree = "<group>"; };
+		0E1AFE1C29C8AA0A00E18459 /* SectionDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationView.swift; sourceTree = "<group>"; };
 		0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseHeader.swift; sourceTree = "<group>"; };
 		0EB88D1029914CAD00D7D96F /* CountingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		0EB88D1329914D1700D7D96F /* CountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingView.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				0EB88D5129992CB900D7D96F /* CollectionViewExampleView.swift */,
 				0EB88D5329992FDD00D7D96F /* CollectionViewExampleViewController.swift */,
 				0E879DB9299E773B00BBE9D2 /* HouseHeader.swift */,
+				0E1AFE1C29C8AA0A00E18459 /* SectionDecorationView.swift */,
 			);
 			path = CollectionViewExample;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				0EB88D3E299690AE00D7D96F /* IntroViewController.swift in Sources */,
 				0EB88D40299690CA00D7D96F /* IntroView.swift in Sources */,
 				0EB88D6D299BD4AC00D7D96F /* ExampleDView.swift in Sources */,
+				0E1AFE1D29C8AA0A00E18459 /* SectionDecorationView.swift in Sources */,
 				0EB88D63299BCF2200D7D96F /* ExampleBViewController.swift in Sources */,
 				0EB88D77299BDD4C00D7D96F /* ExampleFView.swift in Sources */,
 				0EB88D1929915F8200D7D96F /* HeroHelper.swift in Sources */,
