@@ -33,7 +33,7 @@ class CollectionViewExampleView: UIView {
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
             withReuseIdentifier: HouseHeader.id)
         
-        //decoration view 적용해보기
+       
         addSubview(collectionView)
     }
     
