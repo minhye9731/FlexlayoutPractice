@@ -27,4 +27,5 @@ class SectionDecorationView: UICollectionReusableView {
         layer.cornerRadius = 8
         clipsToBounds = true
     }
+
 }
